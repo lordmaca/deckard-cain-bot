@@ -1,0 +1,16 @@
+[Unit]
+Description=Deckard Cain Discord Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/deckard-discord-bot
+Environment="PATH=/home/ubuntu/deckard-discord-bot/venv/bin"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/ubuntu/deckard-discord-bot/venv/bin/python3 /home/ubuntu/deckard-discord-bot/bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

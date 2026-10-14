@@ -1,0 +1,17 @@
+# Environment variables and secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Temporary / debug scrape files
+mobalytics_*
+*.log
+
+# Backup archives
+*.tar.gz
